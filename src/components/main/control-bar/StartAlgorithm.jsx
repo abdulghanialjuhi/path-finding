@@ -3,6 +3,7 @@ import { dijkstra } from '../../../algorithms/dijkstra'
 import { aStar } from '../../../algorithms/aStart'
 import Context from '../../../use-context/Context'
 import { updateNeighbor, animateDijkstra, getNodesInShortestPathOrder } from '../../../algorithms/helperFunctions'
+import Button from '../../Button'
 
 export default function StartAlgorithm() {
 
@@ -51,11 +52,6 @@ export default function StartAlgorithm() {
     }
 
   return (
-        <button
-        className='run-algorithm-button'
-        disabled={buttonDisabled || isRunning}
-        onClick={hanleRunAlgorith}> 
-          Start Algorithm 
-        </button>
+    <Button classNames='run-algorithm-button'  handleOnClick={hanleRunAlgorith} disabled={buttonDisabled || isRunning} name='Start Algorithm' />
   )
 }

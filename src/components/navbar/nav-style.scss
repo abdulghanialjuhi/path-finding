@@ -85,32 +85,26 @@
         .tool-control {
             @include flexCenter($justify-content: space-evenly);
             width: 100%;
-
-            & > div {
-                padding: 10px;
-                border-radius: 3px;
-                background-color: #20203d;
-                cursor: pointer;
-        
-                &:hover {
-                    background-color: #202031;
-                }
-            }       
-    
-            .visualize-container {
-                @include flexCenter();
-                background-color: transparent;
-        
-                &:hover {
-                    background-color: #323255;
-                }
+      
+            .visualize-button {
+                color: $secondary-text-color;
         
                 &--active {
+                    color: $primary-text-color;
+
                     background-color: #6ccca5;
         
                     &:hover {
                         background-color: #5fc79d;
                     }
+                }
+            }
+
+            .clear-board-container {
+                background-color: #20203d;
+
+                &:hover {
+                    background-color: #202031;
                 }
             }
         }

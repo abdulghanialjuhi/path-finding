@@ -58,6 +58,8 @@ export default function Grid({ mouseDown, setMouseDown }) {
 
   const onTouchMove = (e) => {
 
+    if (isRunning) return
+
     const el = document.elementFromPoint(e.touches[0].clientX, e.touches[0].clientY);
       if (!el) return;
       
@@ -71,6 +73,8 @@ export default function Grid({ mouseDown, setMouseDown }) {
     };
 
   const handleMouseEnter = (rowInx, colInx) => {
+
+    if (isRunning) return
 
     if (!mouseDown || checkNode(grid, rowInx, colInx, 'isFinish') || checkNode(grid, rowInx, colInx, 'isStart')) return
 

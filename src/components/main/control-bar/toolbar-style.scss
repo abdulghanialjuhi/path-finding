@@ -1,16 +1,8 @@
 @import '../../../sass-config';
 
-button {
-    color: $secondary-text-color;
-    padding: 10px;
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-    height: 2.4rem;
-}
-
 .draw-container {
     min-width: 5rem;
+    color: $secondary-text-color;
     font-size: 15px;
 
     &--active {

@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from '../../Button'
 
 export default function DrowWall({ mouseDown, setMouseDown }) {
 
@@ -7,9 +8,7 @@ export default function DrowWall({ mouseDown, setMouseDown }) {
   }
 
   return (
-    <button onClick={handleOnClick} 
-    className={mouseDown ? 'draw-container draw-container--active' : 'draw-container'}>
-        Draw Walls
-    </button>
+    <Button name='Draw Walls' handleOnClick={handleOnClick}
+    classNames={mouseDown ? 'draw-container draw-container--active' : 'draw-container'} />
   )
 }

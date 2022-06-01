@@ -3,6 +3,7 @@ import React, { useContext } from 'react'
 import Algorithms from './Algorithms'
 import ClearBoard from './ClearBoard'
 import Context from '../../use-context/Context'
+import Button from '../Button'
 
 export default function ToolBar() {
 
@@ -17,9 +18,9 @@ export default function ToolBar() {
       <div className='tool-bar-container'>
         <Algorithms />
         <div className='tool-control'>
-        <div className={isAnimation ? 'visualize-container visualize-container--active' : 'visualize-container'} onClick={handleIsAnimation}>
-          <h5>  Visualize </h5>
-        </div>
+          <Button 
+          classNames={isAnimation ? 'visualize-button visualize-button--active' : 'visualize-button'} name='Visualize' handleOnClick={handleIsAnimation} 
+          />
           <ClearBoard />
         </div>
       </div>

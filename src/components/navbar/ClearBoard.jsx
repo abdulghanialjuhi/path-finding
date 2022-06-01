@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import Context from '../../use-context/Context'
+import Button from '../Button';
 
 export default function ClearBoard() {
 
@@ -35,8 +36,9 @@ export default function ClearBoard() {
     }
 
   return (
-    <div className='clear-board-container'>
-        <h5 onClick={handleClearBoard} > clear board </h5>
-    </div>
+    <Button name='Clear Board' handleOnClick={handleClearBoard} classNames='clear-board-container'/>
+    // <div className='clear-board-container'>
+    //     <h5 onClick={handleClearBoard} > clear board </h5>
+    // </div>
   )
 }
