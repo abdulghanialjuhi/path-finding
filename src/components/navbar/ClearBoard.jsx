@@ -37,8 +37,5 @@ export default function ClearBoard() {
 
   return (
     <Button name='Clear Board' handleOnClick={handleClearBoard} classNames='clear-board-container'/>
-    // <div className='clear-board-container'>
-    //     <h5 onClick={handleClearBoard} > clear board </h5>
-    // </div>
   )
 }
