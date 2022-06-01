@@ -4,12 +4,12 @@ import { MdPinDrop, MdPushPin } from 'react-icons/md';
 
 const Node = memo(({ node, onClick, handleMouseDown, handleMouseEnter, handleMouseUp }) => {
 
-    const classname = node.isStart ? 'start' : node.isFinish ? 'finish' : node.isWall ? 'wall' : ''
+    const classname = node.isStart ? ' start' : node.isFinish ? ' finish' : node.isWall ? ' wall' : ''
 
     return (
         <div 
         id={`node-${node.row}-${node.col}`}
-        className={`node ${classname}`} 
+        className={`node${classname}`} 
         onClick={() => onClick(node.row, node.col)} 
         onMouseDown={() => handleMouseDown(node.row, node.col)}
         onMouseUp={handleMouseUp}

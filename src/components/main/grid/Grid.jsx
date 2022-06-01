@@ -87,7 +87,8 @@ export default function Grid({ mouseDown, setMouseDown }) {
   }
 
   return (
-    <div onTouchMove={onTouchMove} className='nodes-container'>
+    <div onTouchMove={onTouchMove} 
+    className={`nodes-container${mouseDown ? ' nodes-container--mouse-down' : ''}`}>
     {grid?.map((row, rowInx) => (
       <div key={rowInx}>
         {row.map((node, colInx) => (

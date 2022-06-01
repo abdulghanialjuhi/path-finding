@@ -19,7 +19,8 @@ export default function ToolBar() {
         <Algorithms />
         <div className='tool-control'>
           <Button 
-          classNames={isAnimation ? 'visualize-button visualize-button--active' : 'visualize-button'} name='Visualize' handleOnClick={handleIsAnimation} 
+          classNames={`visualize-button${isAnimation ? ' visualize-button--active' : ''}`} 
+          name='Visualize' handleOnClick={handleIsAnimation} 
           />
           <ClearBoard />
         </div>

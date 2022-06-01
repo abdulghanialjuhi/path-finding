@@ -9,6 +9,6 @@ export default function DrowWall({ mouseDown, setMouseDown }) {
 
   return (
     <Button name='Draw Walls' handleOnClick={handleOnClick}
-    classNames={mouseDown ? 'draw-container draw-container--active' : 'draw-container'} />
+    classNames={`draw-container${mouseDown ? ' draw-container--active' : ''}`} />
   )
 }

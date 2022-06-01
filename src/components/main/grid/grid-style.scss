@@ -4,10 +4,12 @@
     height: 50%;
     border-bottom: 1px rgb(175, 216, 248) solid;
     border-left: 1px rgb(175, 216, 248) solid;
-    touch-action: none;
+    
+    &--mouse-down {
+        touch-action: none;
+    }
 
     div {
-    @include flexCenter();
-
+        @include flexCenter();
     }
 }
