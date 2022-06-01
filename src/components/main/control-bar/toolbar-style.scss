@@ -1,0 +1,31 @@
+@import '../../../sass-config';
+
+button {
+    color: $secondary-text-color;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+    height: 2.4rem;
+}
+
+.draw-container {
+    min-width: 5rem;
+    font-size: 15px;
+
+    &--active {
+        background-color: $secondary-color;
+        color: $primary-text-color;
+
+    }
+}
+
+.run-algorithm-button {
+    letter-spacing: 1px;
+    background-color: #20203d;
+    color: #f3f3f3;
+
+    &:hover {
+        background-color: #202031;
+    }
+}

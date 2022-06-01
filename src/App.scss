@@ -1,0 +1,25 @@
+@import './sass-config';
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  color: $primary-text-color;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // min-height: 400px;
+}
+
+main {
+  min-height: 600px;
+  flex-grow: 1;
+}
+
+header, footer{
+  flex-shrink: 0;
+}

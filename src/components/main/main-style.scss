@@ -1,0 +1,13 @@
+@import '../../sass-config';
+
+main {
+    height: 100%;
+    @include flexCenter($justify-content: space-evenly, $dirction: column);
+
+    .control-bar-continer {
+        @include flexCenter($justify-content: space-between);
+        width: 90%;
+        max-width: 1150px;
+    }
+    
+}

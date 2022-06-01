@@ -1,0 +1,67 @@
+@import '../../../sass-config';
+
+.node {
+    width: 23px;
+    height: 23px;
+    border-right: 1px rgb(175, 216, 248) solid;
+    border-top: 1px rgb(175, 216, 248) solid;
+    transition: background-color 300ms ease;
+    // margin: .2px;
+}
+
+.start {
+    background-color: #00B6CA;
+    animation: animate-backGround 300ms ease;
+}
+
+.finish {
+    background-color: #e3505a;
+    animation: animate-backGround 300ms ease;
+}
+
+.wall {
+    background-color: #202031;
+    animation: animate-backGround 300ms ease;
+    border: none;
+}
+
+@keyframes animate-backGround {
+    0% {
+       transform:  scale(1);
+    }
+
+    90% {
+        transform:  scale(1.2);
+    }
+
+    100% {
+        transform:  scale(1);
+    }
+}
+
+.node-visited {
+    background-color: rgba(17, 104, 217, 0.75);
+    animation: visited 1s ease-in-out;
+}
+
+@keyframes visited {
+    0% {
+        transform: scale(0.3);
+        background-color: rgba(17, 104, 217, 0.75);
+        border-radius: 50% ;
+      }
+    
+      50% {
+        background-color: black;
+      }
+    
+      100% {
+        transform: scale(1);
+        background-color: #1b75be;
+
+      }
+}
+
+.node-shortest-path {
+    background-color: #87cb54;
+}
