@@ -1,10 +1,16 @@
 @import '../../sass-config';
 
+header {
+    width: 100%;
+    background-color: $primary-color;
+    @include flexCenter();
+
+}
 .nav-container {
     width: 100%;
+    max-width: 1190px;
     height: 3.5rem;
     @include flexCenter($justify-content: space-between);
-    background-color: $primary-color;
     padding: 0 20px;
     transition: height 250ms ease;
 
@@ -20,10 +26,10 @@
 
     .tool-bar-container {
         // height: 3rem;
-        width: 60%;
+        width: 50%;
         padding: 5px;
         border-radius: 5px;
-        @include flexCenter($justify-content: space-evenly);
+        @include flexCenter($justify-content: space-between);
         
         h5 {
             letter-spacing: 1px;
@@ -83,8 +89,8 @@
         }
                
         .tool-control {
-            @include flexCenter($justify-content: space-evenly);
-            width: 100%;
+            @include flexCenter($justify-content: space-between);
+            width: 60%;
       
             .visualize-button {
                 color: $secondary-text-color;
@@ -111,7 +117,7 @@
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
     .nav-container { 
         flex-direction: column;
         overflow: hidden;
@@ -136,6 +142,10 @@
             width: 100%;
             flex-direction: column;
             justify-content: space-between;
+
+            .tool-control {
+                width: 80%;
+            }
         } 
     }
 }

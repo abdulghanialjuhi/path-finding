@@ -18,7 +18,7 @@ export default function Algorithms() {
         <h5> Algorithm </h5>
         <div className='drop-down-menu'>
 
-            <h4 onClick={dijkstraAlgorithm} className={activeAlgorithm ? 'avtive-algorithm': ''}> dijkstra </h4>
+            <h4 onClick={dijkstraAlgorithm} className={activeAlgorithm ? 'avtive-algorithm': ''}> Dijkstra </h4>
 
             <h4 onClick={aStarAlgorithm} className={activeAlgorithm ? '' : 'avtive-algorithm'}> A * </h4>
         </div>
